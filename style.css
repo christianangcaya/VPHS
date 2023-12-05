@@ -1,0 +1,344 @@
+*{
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #213a5c;
+  border-radius: 5rem;
+}
+
+body {
+  background: #dad5cf;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #0E2038;
+  font-size: 2rem;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  color: #fffdf0;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  border: 0.2rem solid #FFF;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: #83a1cc;
+}
+
+.btn:hover {
+  background: #f5c400;
+  color: #fffdf0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #0E2038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #fffdf0;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+  color: #f5c400;
+}
+
+.header .btn {
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #fffdf0;
+  font-weight: bolder;
+  font-family: Garamond, serif;
+}
+
+.logo i {
+  color: #0E2038;
+  padding-right: .5rem;
+  display: inline-block;
+  
+}
+.logo {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.logo img {
+  width: 50px; /* Adjust the width of the logo image as needed */
+  margin-right: 10px; /* Add spacing between the image and text */
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 99%;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(images/school.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 85vh;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.home .content {
+  text-align: left;
+}
+
+.home .content span {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 4vw;
+  display: block;
+}
+
+.home .content h3 {
+  font-size: 6vw;
+  color: #f5c400;
+  font-family: Garamond, serif;
+}
+
+.home .content p {
+  max-width: 60rem;
+  font-size: 1.4rem;
+  color: #fff;
+  line-height: 2;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.about .video-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+.about .video-container video {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.about .video-container .controls {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.about .video-container .controls span {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: #0E2038;
+  cursor: pointer;
+  margin: .7rem;
+}
+
+.about .video-container .controls span:hover {
+  background: #90a4b0;
+}
+
+.about .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  margin-bottom: 5rem;
+}
+
+.about .content span {
+  color: #90a4b0;
+  font-size: 2rem;
+}
+
+.about .content h3 {
+  color: #0E2038;
+  font-size: 4rem;
+  margin-top: .5rem;
+  font-family: Garamond, serif;
+}
+
+.about .content p {
+  
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  font-family: 'Lato', sans-serif;
+  color: #213A5C;
+  line-height: 2;
+
+}
+.banner {
+  background-color: #0E2038;
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 4rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.banner .content span {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.banner .content h3 {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.banner .content p {
+  max-width: 50rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+.banner .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+}
+
+.banner .box-container .box {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #a3b5c0;
+}
+
+.banner .box-container .box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.banner .box-container .box .image {
+  height: 20rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.banner .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.banner .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #0E2038;
+}
+
+.banner .box-container .box .content p {
+  text-align: justify;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #213A5C;
+  line-height: 2;
+}
+
+.banner .box-container .box .content a {
+  font-size: 1.7rem;
+  color: #0E2038;
+}
+
+.banner .box-container .box .content a:hover i {
+  padding-left: 1rem;
+}
+
+.banner .box-container .box .content a i {
+  padding-right: .5rem;
+}
